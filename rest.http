@@ -1,0 +1,25 @@
+GET http://localhost:3000/api/v1/tasks HTTP/1.1
+
+###
+POST http://localhost:3000/api/v1/tasks HTTP/1.1
+content-type: application/json
+
+{
+    "name": "abab",
+    
+}
+
+###
+GET http://localhost:3000/api/v1/tasks/7 HTTP/1.1
+
+###
+DELETE http://localhost:3000/api/v1/tasks/20 HTTP/1.1
+
+###
+PATCH http://localhost:3000/api/v1/tasks/8
+content-type: application/json
+
+{
+    "name": "cleaning chair",
+    "completed": false
+}
